@@ -1,0 +1,17 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\intermediate\\build\\win64\\unrealeditor\\development\\audio_recorder\\module.audio_recorder.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\programs\\unreal_engine_projects\\myproject7\\intermediate\\build\\win64\\myproject7editor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\intermediate\\build\\win64\\unrealeditor\\development\\audio_recorder\\definitions.audio_recorder.h",
+            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\intermediate\\build\\win64\\unrealeditor\\inc\\audio_recorder\\audio_recorder.init.gen.cpp",
+            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\intermediate\\build\\win64\\unrealeditor\\inc\\audio_recorder\\myactorcomponent.gen.cpp",
+            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\source\\audio_recorder\\public\\myactorcomponent.h",
+            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\intermediate\\build\\win64\\unrealeditor\\inc\\audio_recorder\\myactorcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

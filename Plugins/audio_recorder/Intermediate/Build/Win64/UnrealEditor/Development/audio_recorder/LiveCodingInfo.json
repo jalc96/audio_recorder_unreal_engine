@@ -1,0 +1,15 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.audio_recorder.cpp.obj": [
+			"AudioRecorder.cpp.obj",
+			"audio_recorder.cpp.obj",
+			"MyActorComponent.cpp.obj"
+		],
+		"Module.audio_recorder.gen.cpp.obj": [
+			"AudioRecorder.gen.cpp.obj",
+			"audio_recorder.init.gen.cpp.obj",
+			"MyActorComponent.gen.cpp.obj"
+		]
+	}
+}

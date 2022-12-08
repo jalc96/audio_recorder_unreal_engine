@@ -1,0 +1,14 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\source\\audio_recorder\\private\\audio_recorder.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\programs\\unreal_engine_projects\\myproject7\\intermediate\\build\\win64\\myproject7editor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\intermediate\\build\\win64\\unrealeditor\\development\\audio_recorder\\definitions.audio_recorder.h",
+            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\source\\audio_recorder\\public\\audio_recorder.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
