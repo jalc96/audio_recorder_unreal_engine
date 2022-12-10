@@ -1,3 +1,13 @@
 /Binaries
 /.vs
 /Intermediate
+*.pdb
+*.json
+*.obj
+*.response
+*.old
+*.lib
+*.log
+Config/HoloLens/*
+Saved/Config/CrashReportClient/*
+Saved/Crashes/*

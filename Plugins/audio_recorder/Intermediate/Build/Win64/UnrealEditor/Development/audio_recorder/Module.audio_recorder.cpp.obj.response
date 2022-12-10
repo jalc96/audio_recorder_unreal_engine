@@ -255,6 +255,7 @@ E:\programs\unreal_engine_projects\MyProject7\Plugins\audio_recorder\Intermediat
 /I E:\programs\unreal_engine_projects\MyProject7\Plugins\audio_recorder\Intermediate\Build\Win64\UnrealEditor\Inc\audio_recorder
 /I E:\programs\unreal_engine_projects\MyProject7\Plugins\audio_recorder\Source
 /I E:\programs\unreal_engine_projects\MyProject7\Plugins\audio_recorder\Source\audio_recorder\Public
+/I Runtime\Online\Voice\Public
 /I ThirdParty\mimalloc\include
 /I E:\superliminal_profiler\Performance\API\include
 /I ThirdParty\LibTiff\Source\Win64

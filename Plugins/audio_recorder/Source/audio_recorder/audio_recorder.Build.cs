@@ -13,7 +13,6 @@ public class audio_recorder : ModuleRules
 				// ... add public include paths required here ...
 			}
 			);
-				
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
@@ -26,10 +25,10 @@ public class audio_recorder : ModuleRules
 			new string[]
 			{
 				"Core",
+				"Voice",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
-			
 		
 		PrivateDependencyModuleNames.AddRange(
 			new string[]

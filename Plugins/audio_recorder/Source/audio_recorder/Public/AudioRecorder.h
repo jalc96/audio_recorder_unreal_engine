@@ -4,9 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-//#include "Interfaces/VoiceCapture.h"
-//#include "Runtime/Online/Voice/Public/VoiceModule.h"
-#include "Runtime/Online/Voice/Public/Interfaces/VoiceCapture.h"
+// #include "Voice/Public/VoicePackage.h"
+// #include "Voice/Public/VoiceModule.h"
+// #include "Voice/Public/Interfaces/VoiceCapture.h"
+#include "Interfaces/VoiceCapture.h"
 
 #include "AudioRecorder.generated.h"
 
@@ -23,7 +24,7 @@ public:
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
-	IVoiceCapture VoiceCapture;
+	IVoiceCapture *VoiceCapture;
 
 public:	
 	// Called every frame

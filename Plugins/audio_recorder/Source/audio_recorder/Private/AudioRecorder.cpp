@@ -19,7 +19,7 @@ void UAudioRecorder::BeginPlay()
 {
 	Super::BeginPlay();
 
-	VoiceCapture = FVoiceModule::Get().CreateVoiceCapture();
+	// VoiceCapture = IVoiceCapture();
 	
 }
 
@@ -33,7 +33,7 @@ void UAudioRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 
 bool UAudioRecorder::StartCapture() {
 	UE_LOG(LogTemp, Warning, TEXT("start capture"));
-	bool result = VoiceCapture.Start();
+	bool result = VoiceCapture->Start();
 	return result;
 }
 
