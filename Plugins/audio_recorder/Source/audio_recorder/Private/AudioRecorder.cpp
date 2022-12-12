@@ -19,8 +19,19 @@ void UAudioRecorder::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// VoiceCapture = IVoiceCapture();
-	
+	if (FVoiceModule::IsAvailable()) {
+		UE_LOG(LogTemp, Display, TEXT("FVoiceModule is available"));
+		VoiceCapture = FVoiceModule::Get().CreateVoiceCapture("");
+
+		if (VoiceCapture.IsValid()) {
+			UE_LOG(LogTemp, Display, TEXT("VoiceCapture created"));
+		} else {
+			UE_LOG(LogTemp, Warning, TEXT("VoiceCapture not created"));
+		}
+	} else {
+		UE_LOG(LogTemp, Warning, TEXT("FVoiceModule is not available"));
+	}
+
 }
 
 
@@ -33,10 +44,25 @@ void UAudioRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 
 bool UAudioRecorder::StartCapture() {
 	UE_LOG(LogTemp, Warning, TEXT("start capture"));
-	bool result = VoiceCapture->Start();
+	bool result;
+
+	if (VoiceCapture.IsValid()) {
+		UE_LOG(LogTemp, Display, TEXT("VoiceCapture valid"));
+		result = VoiceCapture->Start();
+	} else {
+		UE_LOG(LogTemp, Warning, TEXT("VoiceCapture not valid"));
+		result = false;
+	}
+
 	return result;
 }
 
 void UAudioRecorder::StopCapture() {
 	UE_LOG(LogTemp, Warning, TEXT("stop capture"));
+
+	if (VoiceCapture.IsValid()) {
+		UE_LOG(LogTemp, Display, TEXT("VoiceCapture valid"));
+	} else {
+		UE_LOG(LogTemp, Warning, TEXT("VoiceCapture not valid"));
+	}
 }
