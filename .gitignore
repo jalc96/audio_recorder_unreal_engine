@@ -2,7 +2,6 @@
 /.vs
 /Intermediate
 *.pdb
-*.json
 *.obj
 *.response
 *.old

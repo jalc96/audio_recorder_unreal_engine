@@ -1,12 +1,11 @@
 {
     "Version": "1.1",
     "Data": {
-        "Source": "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\intermediate\\build\\win64\\unrealeditor\\development\\audio_recorder\\module.audio_recorder.cpp",
+        "Source": "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\source\\audio_recorder\\private\\audiorecorder.cpp",
         "ProvidedModule": "",
         "PCH": "e:\\programs\\unreal_engine_projects\\myproject7\\intermediate\\build\\win64\\myproject7editor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
         "Includes": [
             "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\intermediate\\build\\win64\\unrealeditor\\development\\audio_recorder\\definitions.audio_recorder.h",
-            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\source\\audio_recorder\\private\\audiorecorder.cpp",
             "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\source\\audio_recorder\\public\\audiorecorder.h",
             "e:\\juegos\\epicgames\\ue_5.0\\engine\\source\\runtime\\online\\voice\\public\\voice.h",
             "e:\\juegos\\epicgames\\ue_5.0\\engine\\source\\runtime\\online\\voice\\public\\voicemodule.h",
@@ -39,12 +38,7 @@
             "e:\\juegos\\epicgames\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\soundwaveprocedural.generated.h",
             "e:\\juegos\\epicgames\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\audiomixer\\synthcomponent.generated.h",
             "e:\\juegos\\epicgames\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\voiceconfig.generated.h",
-            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\intermediate\\build\\win64\\unrealeditor\\inc\\audio_recorder\\audiorecorder.generated.h",
-            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\source\\audio_recorder\\private\\audio_recorder.cpp",
-            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\source\\audio_recorder\\public\\audio_recorder.h",
-            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\source\\audio_recorder\\private\\myactorcomponent.cpp",
-            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\source\\audio_recorder\\public\\myactorcomponent.h",
-            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\intermediate\\build\\win64\\unrealeditor\\inc\\audio_recorder\\myactorcomponent.generated.h"
+            "e:\\programs\\unreal_engine_projects\\myproject7\\plugins\\audio_recorder\\intermediate\\build\\win64\\unrealeditor\\inc\\audio_recorder\\audiorecorder.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
