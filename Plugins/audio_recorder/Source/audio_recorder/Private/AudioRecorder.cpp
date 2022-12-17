@@ -40,6 +40,13 @@ void UAudioRecorder::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
+	if (VoiceCapture->IsCapturing()) {
+		UE_LOG(LogTemp, Display, TEXT("VoiceCapture capturing"));
+		UE_LOG(LogTemp, Display, TEXT("buffer size: %d"), VoiceCapture->GetBufferSize());
+	} else {
+		UE_LOG(LogTemp, Warning, TEXT("VoiceCapture not capturing"));
+	}
+
 }
 
 bool UAudioRecorder::StartCapture() {
@@ -60,9 +67,20 @@ bool UAudioRecorder::StartCapture() {
 void UAudioRecorder::StopCapture() {
 	UE_LOG(LogTemp, Warning, TEXT("stop capture"));
 
-	if (VoiceCapture.IsValid()) {
-		UE_LOG(LogTemp, Display, TEXT("VoiceCapture valid"));
-	} else {
+	if (!VoiceCapture.IsValid()) {
 		UE_LOG(LogTemp, Warning, TEXT("VoiceCapture not valid"));
+		return;
 	}
+
+	UE_LOG(LogTemp, Display, TEXT("VoiceCapture valid"));
+
+	uint32 BufferSize = 0;
+	EVoiceCaptureState::Type CaptureState = VoiceCapture->GetCaptureState(BufferSize);
+
+
+	if (CaptureState == EVoiceCaptureState::Ok && BufferSize > 0) {
+		UE_LOG(LogTemp, Error, TEXT("Voice buffer size: %d"), BufferSize);
+	}
+
+	VoiceCapture->Stop();
 }

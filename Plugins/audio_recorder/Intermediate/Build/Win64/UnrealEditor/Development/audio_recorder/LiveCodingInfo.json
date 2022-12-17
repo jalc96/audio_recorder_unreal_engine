@@ -2,9 +2,9 @@
 	"RemapUnityFiles": 
 	{
 		"Module.audio_recorder.cpp.obj": [
-			"AudioRecorder.cpp.obj",
 			"audio_recorder.cpp.obj",
-			"MyActorComponent.cpp.obj"
+			"MyActorComponent.cpp.obj",
+			"AudioRecorder.cpp.obj"
 		],
 		"Module.audio_recorder.gen.cpp.obj": [
 			"AudioRecorder.gen.cpp.obj",

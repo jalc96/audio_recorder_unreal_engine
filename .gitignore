@@ -7,6 +7,9 @@
 *.old
 *.lib
 *.log
+*.dll
+*.exp
+*.png
 Config/HoloLens/*
 Saved/Config/CrashReportClient/*
 Saved/Crashes/*
